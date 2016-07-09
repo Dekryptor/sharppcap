@@ -2869,7 +2869,7 @@
             A <see cref="T:PacketDotNet.LinkLayers"/>
             </param>
             <param name="snapshotLength">
-            A <see cref="T:System.Int32"/>
+            A <see cref="T:System.Nullable`1"/>
             </param>
             <param name="captureFilename">
             A <see cref="T:System.String"/>

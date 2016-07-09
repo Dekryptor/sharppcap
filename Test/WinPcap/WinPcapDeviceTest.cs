@@ -41,13 +41,16 @@ namespace Test
             }
 
             devices[0].Open();
+            devices[0].OnPcapStatistics += (sender, args) => { };
 
             bool caughtException = false;
 
             try
             {
+                
                 // start background capture
                 devices[0].StartCapture();
+                
             } catch(DeviceNotReadyException)
             {
                 caughtException = true;
